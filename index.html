@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dados Gerais da Alemanha</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        /* Cores da bandeira alemã */
+        :root {
+            --preto: #000000;
+            --vermelho: #DD0000;
+            --amarelo: #FFCE00;
+        }
+
+        header {
+            background: linear-gradient(to right, var(--preto), var(--vermelho), var(--amarelo));
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        nav {
+            background-color: var(--preto);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            overflow-x: auto;
+            padding: 0.5rem 0;
+            white-space: nowrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: var(--preto);
+            border-bottom: 3px solid var(--amarelo);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        section img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 1rem 0;
+            display: block;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .dica {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-left: 4px solid var(--vermelho);
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--preto);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                padding: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dados Gerais da Alemanha</h1>
+        <p>Informações essenciais sobre o país europeu</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#capital">Capital</a></li>
+            <li><a href="#populacao">População</a></li>
+            <li><a href="#idioma">Idioma</a></li>
+            <li><a href="#moeda">Moeda</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#geografia">Geografia</a></li>
+            <li><a href="#cultura">Cultura</a></li>
+            <li><a href="#turismo">Turismo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="capital">
+            <h2>Capital</h2>
+            <img src="https://placehold.co/800x300/000000/FFFFFF?text=Berlim+-+Capital+da+Alemanha" alt="Vista aérea de Berlim, a capital da Alemanha, com prédios modernos e parques" />
+            <p>A capital da Alemanha é Berlim, uma das cidades mais importantes da Europa. Centro político, cultural e econômico do país, Berlim é conhecida por sua história rica, arquitetura diversificada e vida artística vibrante. Localizada no nordeste do país, é a cidade mais populosa da Alemanha.</p>
+        </section>
+
+        <section id="populacao">
+            <h2>População</h2>
+            <img src="https://placehold.co/800x300/DD0000/FFFFFF?text=População+da+Alemanha" alt="Pessoas caminhando em uma praça alemã, representando a diversidade populacional" />
+            <p>A Alemanha possui aproximadamente 83 milhões de habitantes, sendo o país mais populoso da União Europeia. A população é majoritariamente urbana, com alta densidade em cidades como Berlim, Hamburgo, Munique e Frankfurt. O país também recebe imigrantes de diversas partes do mundo, contribuindo para sua diversidade cultural.</p>
+        </section>
+
+        <section id="idioma">
+            <h2>Idioma Oficial</h2>
+            <img src="https://placehold.co/800x300/FFCE00/000000?text=Idioma+Alemão" alt="Sinalização em alemão em uma rua alemã" />
+            <p>O idioma oficial da Alemanha é o alemão. É a língua mais falada na União Europeia e possui variações regionais, como o bávaro e o saxão. O alemão padrão é baseado no alto-alemão e é amplamente utilizado na educação, mídia e governo. A maioria dos alemães também tem bom domínio do inglês, especialmente nas áreas urbanas.</p>
+        </section>
+
+        <section id="moeda">
+            <h2>Moeda</h2>
+            <img src="https://placehold.co/800x300/000000/FFFFFF?text=Euro+-+Moeda+da+Alemanha" alt="Notas e moedas do euro sobre fundo preto" />
+            <p>A moeda oficial da Alemanha é o euro (€), adotado em 2002 após a unificação monetária europeia. A Alemanha faz parte da zona do euro desde sua criação. O euro é usado em transações diárias, e o país possui um dos sistemas bancários mais estáveis da Europa. Cartões de crédito e débito são amplamente aceitos.</p>
+        </section>
+
+        <section id="historia">
+            <h2>História Breve</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Berlin_Wall_1989.jpg/800px-Berlin_Wall_1989.jpg" alt="Pessoas derrubando o Muro de Berlim em 1989" />
+            <p>A Alemanha tem uma história complexa marcada por transformações políticas. Unificada em 1871, passou por duas guerras mundiais, divisão após a Segunda Guerra (1949–1990) e reunificação pacífica em 1990 após a queda do Muro de Berlim. Hoje, é uma república parlamentar e líder na União Europeia, comprometida com a paz e a democracia.</p>
+        </section>
+
+        <section id="geografia">
+            <h2>Geografia</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://placehold.co/600x300/000000/FFFFFF?text=Montanhas+dos+Alpes+Alemães" alt="Montanhas nevadas dos Alpes alemães" />
+                    <p>A Alemanha está localizada na Europa Central e faz fronteira com nove países. Seu território varia de planícies no norte a montanhas nos Alpes no sul. Possui rios importantes como o Reno e o Danúbio, além de lagos e florestas densas. O clima é temperado, com quatro estações bem definidas.</p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x300/DD0000/FFFFFF?text=Costa+do+Mar+Báltico" alt="Praia no Mar Báltico na Alemanha" />
+                    <p>O país tem costa no Mar do Norte e no Mar Báltico, com importantes portos como Hamburgo. Regiões como a Floresta Negra e o Vale do Reno são famosas por sua beleza natural. A Alemanha investe fortemente em energias renováveis e preservação ambiental.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultura">
+            <h2>Cultura Principal</h2>
+            <div class="grid">
+                <div>
+                    <img src="https://placehold.co/600x300/FFCE00/000000?text=Festival+Oktoberfest" alt="Pessoas no Oktoberfest bebendo cerveja e usando trajes tradicionais" />
+                    <p>A cultura alemã é rica em tradições, música clássica, filosofia e inovação. Festivais como o Oktoberfest, em Munique, atraem milhões de visitantes. A literatura de Goethe, a música de Beethoven e a filosofia de Kant são marcos culturais mundiais. O cinema, teatro e arte contemporânea também têm forte presença.</p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x300/000000/FFFFFF?text=Arquitetura+Tradicional+Alemã" alt="Casas coloridas com enxaimel típicas da Alemanha" />
+                    <p>A arquitetura tradicional com casas de enxaimel (Fachwerk) é característica de vilarejos históricos. A culinária inclui salsichas, chucrute, pães e cervejas artesanais. O respeito às regras, pontualidade e eficiência são valores culturais marcantes. A Alemanha também é pioneira em sustentabilidade e qualidade de vida.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="turismo">
+            <h2>Dicas para Turistas na Alemanha</h2>
+            <p>Planejando visitar a Alemanha? Confira estas dicas práticas para aproveitar ao máximo sua viagem:</p>
+
+            <div class="dica">
+                <strong>1. Melhor período para visitar:</strong> De maio a setembro é ideal, com clima ameno e muitos eventos ao ar livre. O outono (especialmente outubro) é famoso pelo Oktoberfest. Evite o inverno rigoroso se não curtir frio intenso.
+            </div>
+
+            <div class="dica">
+                <strong>2. Transporte público:</strong> O sistema de transporte é eficiente, pontual e abrangente. Utilize trens (Deutsche Bahn), metrôs e ônibus. Compre passes diários ou semanais para economizar. Reserve trens de alta velocidade com antecedência para melhores preços.
+            </div>
+
+            <div class="dica">
+                <strong>3. Culinária típica:</strong> Experimente o Bratwurst (salsicha grelhada), Sauerkraut (chucrute), Pretzels (pão de sal), e cervejas locais. Em Munique, prove o Weissbier. Nas padarias, não deixe de experimentar o pão de centeio (Roggenbrot).
+            </div>
+
+            <div class="dica">
+                <strong>4. Etiqueta local:</strong> Os alemães valorizam pontualidade, ordem e respeito às regras. Cumprimente com um “Guten Tag” (Bom dia). Evite fazer barulho em transportes públicos. Recicle corretamente (os contêineres são coloridos por tipo de lixo).
+            </div>
+
+            <div class="dica">
+                <strong>5. Precauções de segurança:</strong> A Alemanha é um país seguro, mas fique atento a picaretas em áreas turísticas. Trancar carros e não deixar objetos à vista. Em cidades grandes, evite áreas mal iluminadas à noite. Em caso de emergência, ligue para 112.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dados Gerais da Alemanha | Site educativo com informações precisas e atualizadas</p>
+    </footer>
+</body>
+</html>
